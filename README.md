@@ -54,3 +54,67 @@ Marque os passos à medida que os completa, preenchendo os campos na coluna "Con
 - Erro Absoluto Médio (Mean Absolute Error - MAE)
 - Erro Quadrático Médio (Mean Squared Error - MSE)
 - Coeficiente de Correlação de Pearson
+
+
+# Comandos Principais do Pandas e Numpy
+
+## Pandas
+### Leitura e Escrita de Dados
+- `pd.read_csv()`: Leitura de arquivos CSV.
+- `pd.read_excel()`: Leitura de arquivos Excel.
+- `df.to_csv()`: Escrita de DataFrame em arquivo CSV.
+- `df.to_excel()`: Escrita de DataFrame em arquivo Excel.
+
+### Manipulação de Dados
+- `df.head()`: Visualiza as primeiras linhas do DataFrame.
+- `df.tail()`: Visualiza as últimas linhas do DataFrame.
+- `df.info()`: Sumário das informações do DataFrame.
+- `df.describe()`: Estatísticas descritivas do DataFrame.
+- `df.shape`: Retorna a forma (número de linhas e colunas) do DataFrame.
+- `df.columns`: Retorna os nomes das colunas do DataFrame.
+- `df.index`: Retorna os rótulos das linhas do DataFrame.
+- `df.drop()`: Remove linhas ou colunas do DataFrame.
+- `df.rename()`: Renomeia colunas do DataFrame.
+- `df.groupby()`: Agrupa dados por uma ou mais variáveis.
+- `df.merge()`: Une dois DataFrames usando uma chave de junção.
+
+### Seleção e Filtragem de Dados
+- `df['coluna']`: Seleciona uma coluna específica.
+- `df.loc[]`: Acesso baseado em rótulos.
+- `df.iloc[]`: Acesso baseado em índices inteiros.
+- `df.query()`: Filtra linhas com uma expressão booleana.
+- `df[(condição)]`: Filtra linhas com uma condição booleana.
+
+### Operações com Dados
+- `df.apply()`: Aplica uma função ao longo de um eixo do DataFrame.
+- `df.drop_duplicates()`: Remove linhas duplicadas.
+- `df.fillna()`: Preenche valores ausentes com um valor específico.
+- `df.sort_values()`: Ordena os valores do DataFrame.
+- `df.pivot_table()`: Cria uma tabela dinâmica a partir dos dados.
+- `df.merge()`: Combina dois DataFrames usando uma chave de junção.
+
+## Numpy
+### Criação de Arrays
+- `np.array()`: Cria um array numpy a partir de uma lista ou tupla.
+- `np.zeros()`: Cria um array de zeros com a forma especificada.
+- `np.ones()`: Cria um array de uns com a forma especificada.
+- `np.arange()`: Cria um array com valores espaçados uniformemente dentro de um intervalo.
+
+### Operações com Arrays
+- `np.sum()`: Calcula a soma dos elementos do array.
+- `np.mean()`: Calcula a média dos elementos do array.
+- `np.median()`: Calcula a mediana dos elementos do array.
+- `np.std()`: Calcula o desvio padrão dos elementos do array.
+- `np.max()`: Encontra o valor máximo do array.
+- `np.min()`: Encontra o valor mínimo do array.
+- `np.argmax()`: Retorna o índice do valor máximo do array.
+- `np.argmin()`: Retorna o índice do valor mínimo do array.
+
+### Manipulação de Arrays
+- `np.reshape()`: Redimensiona o array.
+- `np.concatenate()`: Concatena arrays ao longo de um eixo.
+- `np.vstack()`: Empilha arrays verticalmente.
+- `np.hstack()`: Empilha arrays horizontalmente.
+- `np.split()`: Divide o array em sub-arrays.
+- `np.copy()`: Cria uma cópia do array.
+
